@@ -5,7 +5,7 @@ convert callback function to promise
 
 ## Installation
 
-    $ npm install toPromise
+    $ npm install ctoPromise
 
 
 ## API
