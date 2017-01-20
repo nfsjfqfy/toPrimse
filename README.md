@@ -1,15 +1,38 @@
-toPromise
-=============
-convert callback function to promise.
+# toPromise
+convert callback function to promise
 
-#useage
------
-require('./index');
-function test(a,callback){
-  if(a>0){
-    callback(null,a*2);
-  }else{
-    callback(new Error('arg less than zero.'));
-  }
-}
-toPromise(test,1).then(function(r,e){if(e){console.error(e);}else{console.log(r);}).catch(function(e){console.error(e);});
+
+
+## Installation
+
+    $ npm install toPromise
+
+
+## API
+
+```javascript
+require('toPromise');
+
+
+function test (arg, callback) {
+    if (arg > 0) {
+        cb (null, arg*2);
+    }
+    else {
+        cb (new Error ('arg is less than 0'));
+    }
+};
+
+toPromise(test,a)
+    .then(function(result){
+        //TODO:...
+    })
+    .catch(function(e){
+        //TODO:...
+    });
+
+```
+
+## License
+
+  MIT
