@@ -11,7 +11,7 @@ convert callback function to promise
 ## API
 
 ```javascript
-require('cbtp');
+const cbtp = require('cbtp');
 
 
 function test (arg, callback) {
