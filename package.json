@@ -1,6 +1,6 @@
 {
   "name": "cbtp",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "cover callback function to promise",
   "main": "index.js",
   "scripts": {
