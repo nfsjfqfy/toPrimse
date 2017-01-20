@@ -5,7 +5,7 @@ convert callback function to promise
 
 ## Installation
 
-    $ npm install ctoPromise
+    $ npm install cbtp
 
 
 ## API
@@ -23,7 +23,7 @@ function test (arg, callback) {
     }
 };
 
-toPromise(test,a)
+cbtp.toPromise(test,a)
     .then(function(result){
         //TODO:...
     })
