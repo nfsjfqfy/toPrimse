@@ -1,0 +1,29 @@
+{
+  "name": "cbtp",
+  "version": "0.0.2",
+  "description": "cover callback function to promise",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nfsjfqfy/toPromise.git"
+  },
+  "keywords": [
+    "function",
+    "promise"
+  ],
+  "author": "MatriQ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nfsjfqfy/toPromise/issues"
+  },
+  "homepage": "https://github.com/nfsjfqfy/toPromise#readme",
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "should": "^11.1.2"
+  }
+}
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
