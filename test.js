@@ -6,18 +6,18 @@ const cbtp = require ('./');
 
 function test1(a, b, cb) {
     cb (null, a===b);
-};
+}
 
 function test2(a, cb) {
     if (a >= 0) {
         cb (null, a*2);
     }
     else {
-        cb (Error ('a is less than 0'));
+        cb ( new Error ('a is less than 0'));
     }
-};
+}
 
-describe ('convert fucn to promise', function () {
+describe ('convert fuc to promise', function () {
     describe ('1 should not equal to 2', function () {
         it ('return false', function () {
             cbtp.toPromise (test1,1, 2)
@@ -53,8 +53,8 @@ describe ('convert fucn to promise', function () {
     });
     describe ('-1 should be throw error', function () {
         it ('shoud not be exec', function () {
-            cbtp.toPromise (test,-1)
-                .then (function (result) {
+            cbtp.toPromise (test2,-1)
+                .then (function () {
                     should.fail ();
                 })
                 .catch (function (e) {
