@@ -1,7 +1,8 @@
 "use strict";
 function toPromise() {
-    let a = Array.prototype.slice.call(arguments, 1);
     let f = arguments[0];
+    let a = Array.prototype.slice.call(arguments, 1);
+
     return new Promise(function (resolve, reject) {
         a.push(function (err, r) {
             if (err) {
